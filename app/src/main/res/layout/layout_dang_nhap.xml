@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_30sp"
+        android:text="@string/dang_nhap"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_above="@+id/lnDangNhap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+
+
+    <ImageView
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_150dp"
+        android:src="@drawable/logodangnhap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        android:id="@+id/lnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/edTenDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ten_dang_nhap"
+            android:padding="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:background="@drawable/custom_textview"
+            android:drawableStart="@drawable/user"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="@dimen/size_10dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/edMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nhap_mat_khau"
+            android:padding="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:background="@drawable/custom_textview"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/size_10dp"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+        
+        
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10dp"
+            android:text="@string/dong_y"
+            android:layout_margin="@dimen/size_10dp"
+            android:background="@drawable/custom_dongy_dang_nhap"/>
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/dang_ky"
+            android:background="@drawable/custom_button_dangky"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
