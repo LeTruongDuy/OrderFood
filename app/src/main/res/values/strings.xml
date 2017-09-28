@@ -9,4 +9,8 @@
     <string name="dong_y">Đồng ý</string>
     <string name="thoat">Thoát</string>
     <string name="dang_ky">Đăng ký</string>
+    <string name="nhap_ten_dang_nhap">Vui lòng nhập tên đăng nhập</string>
+    <string name="mat_khau_rong">Vui lòng nhập mật khẩu</string>
+    <string name="them_thanh_cong">Thêm thành công</string>
+    <string name="them_that_bai">Thêm thất bại</string>
 </resources>

@@ -19,10 +19,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <EditText
+            android:id="@+id/edTenDN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_textview"
@@ -35,6 +37,7 @@
             android:drawableLeft="@drawable/user" />
 
         <EditText
+            android:id="@+id/edMatKhau"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_textview"
@@ -48,22 +51,27 @@
             android:drawableLeft="@drawable/password" />
 
         <RadioGroup
+            android:id="@+id/rgGioiTinh"
             android:layout_margin="@dimen/size_10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
+                android:id="@+id/rNam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nam"/>
+                android:text="@string/nam"
+                android:checked="true"/>
 
             <RadioButton
+                android:id="@+id/rNu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nu"/>
         </RadioGroup>
 
         <EditText
+            android:id="@+id/edNgaySinh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_textview"
@@ -76,7 +84,7 @@
             android:drawableLeft="@android:drawable/ic_menu_my_calendar" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edCMND"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size_10dp"
@@ -87,13 +95,15 @@
             android:padding="@dimen/size_10dp"
             android:maxLines="1"
             android:inputType="number"
-            android:drawableLeft="@drawable/idcard" />
+            android:drawableLeft="@drawable/idcard"
+            android:maxLength="9"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/btnDongY"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -103,6 +113,7 @@
                 android:background="@drawable/custom_button_green"/>
 
             <Button
+                android:id="@+id/btnThoat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
